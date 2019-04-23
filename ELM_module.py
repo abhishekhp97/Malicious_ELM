@@ -15,8 +15,8 @@ from sklearn.metrics import accuracy_score
 
 #importing dataset
 dataset=pd.read_csv("Dataset.csv")
-x=dataset.iloc[:,2:-1].values
-y=dataset.iloc[:,9].values
+x=dataset.iloc[1:,2:-1].values
+y=dataset.iloc[1:,9].values
               
 #splitting into training and test set
 from sklearn.cross_validation import train_test_split
