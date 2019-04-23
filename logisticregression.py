@@ -13,8 +13,8 @@ import pandas as pd
 
 
 dataset = pd.read_csv('Dataset.csv')
-X = dataset.iloc[:, 2:-1].values
-y = dataset.iloc[:, 9].values
+X = dataset.iloc[1:, 2:-1].values
+y = dataset.iloc[1:, 9].values
 
 
 from sklearn.cross_validation import train_test_split
